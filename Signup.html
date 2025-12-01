@@ -1,0 +1,847 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <style>
+
+  body
+  {
+    position: relative;
+    width: 1260px;
+    height: 2000px;
+
+    background: linear-gradient(180deg, #3906B6 0%, #000000 100%);
+  }
+
+  #Logo
+  {
+    position: absolute;
+    width: 143px;
+    height: 143px;
+    left: 25px;
+    top: 6px;
+  }
+
+  .Header
+  {
+    position: absolute;
+    width: 1450px;
+    height: 102px;
+    left: calc(50% - 1450px/2 - 5px);
+    top: 0px;
+
+    background: rgba(184, 184, 184, 0.6);
+    filter: blur(50px);
+  }
+
+  #HList
+  {
+    position: absolute;
+    width: 218px;
+    height: 63px;
+    top: 20px;
+
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 69px;
+    text-align: center;
+
+    color: #BFACEB;
+  }
+
+  .Home
+  { 
+    left: 124px;
+  }
+
+  .Products
+  {
+    left: 254px;
+  }
+
+  .Cart
+  {
+    left: 404;
+  }
+
+  .Contact
+  {
+    left: 570;
+  }
+
+  .Account
+  {
+    left: 704;
+  }
+
+  #Arrow
+  {
+    position: absolute;
+    width: 194px;
+    height: 193px;
+    left: 28px;
+    top: 158px;
+  }
+
+  fieldset
+  {
+    padding-top: 320px;
+    border: none;
+  }
+
+  .LoginText
+  {
+    position: absolute;
+    width: 692px;
+    height: 92px;
+    left: calc(50% - 692px/2);
+    top: 146px;
+
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 92px;
+    text-align: center;
+
+    background: linear-gradient(90deg, #FFFFFF 0%, #999999 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    text-shadow: 10px 12px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  label
+  {
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    
+    text-align: center;
+
+    background: linear-gradient(90deg, #E8E8E8 0%, #5c48cf 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    text-shadow: 11px 11px 6.8px rgba(0, 0, 0, 0.25);
+  }
+
+  fieldset
+  {
+    width: 739px;
+    margin: 0 auto;
+    border: none;
+  }
+
+  input
+  {
+    box-sizing: border-box;
+
+    width: 736px;
+    height: 58px;
+
+    color: white;
+
+    background: linear-gradient(180deg, rgba(21, 14, 36, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+    opacity: 0.6;
+    border-radius: 15px;
+    border: none;
+    padding-left: 50px;
+  }
+
+  .ForgetPassword
+  {
+    width: 303px;
+    height: 22px;
+
+    margin-left: 200px;
+
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+
+    color: #BFACEB;
+
+    opacity: 0.6;
+  }
+
+  .CreateNewAccount
+  {
+    width: 303px;
+    height: 22px;
+
+    margin-left: 477px;
+
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+
+    color: #BFACEB;
+
+    opacity: 0.6;
+  }
+
+  .LoginButton
+  {
+    width: 739px;
+    height: 58px;
+
+    background: linear-gradient(90deg, #4f378acc 0%, rgba(57, 31, 204, 0.8) 100%);
+    border-radius: 15px;
+    border: none;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+
+    margin-top: 20px;
+    margin-left: 260px;
+
+    color: #FFFFFF;
+  }
+
+  .LoginButton:hover
+  {
+    background: linear-gradient(90deg, #a58de2cc 0%, rgba(108, 87, 230, 0.8) 100%);
+  }
+
+  .OrLogInwith
+  {
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    opacity: 0.6;
+  }
+
+  .Logo
+  {
+    width: 100px;
+    height: 100px;
+
+    padding-left: 60px;
+  }
+
+  .ThreeLogos
+  {
+    padding-left: 350px;
+  }
+
+  .c
+  {
+    position: absolute;
+    width: 1565px;
+    height: 1477px;
+    left: -121px;
+    top: 668px;
+    border-radius: 100%;
+  }
+
+  /* Ellipse 46 */
+  .one
+  {
+      position: absolute;
+      width: 607px;
+      height: 429px;
+      left: 954px;
+      top: 275px;
+
+      background: linear-gradient(180deg, #065D93 0%, #6C6D91 100%);
+      opacity: 0.6;
+      filter: blur(50px);
+  }
+
+  /* Ellipse 36 */
+
+  .two
+  {
+      position: absolute;
+      width: 304px;
+      height: 334px;
+      left: 709px;
+      top: 371px;
+
+      background: linear-gradient(180deg, rgba(83, 6, 147, 0.6) 0%, rgba(108, 109, 145, 0.6) 100%);
+      filter: blur(50px);
+  }
+
+  /* Ellipse 37 */
+
+  .three
+  {
+    position: absolute;
+    width: 200px;
+    height: 206px;
+    left: 243px;
+    top: 5px;
+
+    background: linear-gradient(180deg, #065D93 0%, #6C6D91 100%);
+    opacity: 0.6;
+    filter: blur(50px);
+  }
+
+  /* Ellipse 51 */
+
+  .four
+  {
+    position: absolute;
+    width: 383px;
+    height: 334px;
+    left: 577px;
+    top: 941px;
+
+    background: linear-gradient(180deg, rgba(83, 6, 147, 0.6) 0%, rgba(108, 109, 145, 0.6) 100%);
+    filter: blur(50px);
+
+  }
+
+  /* Ellipse 41 */
+
+  .five
+  {
+    position: absolute;
+    width: 200px;
+    height: 206px;
+    left: 867px;
+    top: 5px;
+
+    background: linear-gradient(180deg, #065D93 0%, #6C6D91 100%);
+    opacity: 0.6;
+    filter: blur(50px);
+  }
+
+  /* Ellipse 42 */
+  .six
+  {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 490px;
+    top: 0px;
+
+    background: rgba(30, 153, 147, 0.5);
+    filter: blur(50px);
+
+  }
+
+  /* Ellipse 48 */
+  .seven
+  {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 126px;
+    top: 827px;
+
+    background: rgba(30, 153, 147, 0.5);
+    filter: blur(50px);
+  }
+
+  /* Ellipse 43 */
+  .eight
+  {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 290px;
+    top: 319px;
+
+    background: rgba(30, 153, 147, 0.5);
+    filter: blur(50px);
+
+  }
+
+  /* Ellipse 47 */
+
+  .nine
+  {
+    position: absolute;
+    width: 300px;
+    height: 490px;
+    left: 0px;
+    top: 214px;
+
+    background: rgba(30, 153, 147, 0.5);
+    filter: blur(50px);
+  }
+
+  /* Ellipse 36 */
+  .ten
+  {
+    position: absolute;
+    width: 265px;
+    height: 273px;
+    left: 562px;
+    top: 395px;
+
+    background: linear-gradient(180deg, #4F378A 0%, #150E24 100%);
+    filter: blur(50px);
+  }
+
+  /* Ellipse 50 */
+
+  .eleven
+  {
+    position: absolute;
+    width: 265px;
+    height: 273px;
+    left: 1300px;
+    top: 1137px;
+
+    background: linear-gradient(180deg, #4F378A 0%, #150E24 100%);
+    filter: blur(50px);
+  }
+
+  /* Ellipse 49 */
+
+  .twelve
+  {
+    position: absolute;
+    width: 265px;
+    height: 273px;
+    left: 577px;
+    top: 752px;
+
+    background: linear-gradient(180deg, #4F378A 0%, #150E24 100%);
+    filter: blur(50px);
+  }
+
+  /* Ellipse 40 */
+  .thirteen
+  {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 1067px;
+    top: 35px;
+
+    background: rgba(30, 153, 147, 0.5);
+    filter: blur(50px);
+  }
+
+  /* Ellipse 52 */
+  .fourteen
+  {
+    position: absolute;
+    width: 300px;
+    height: 230px;
+    left: 941px;
+    top: 1247px;
+
+    background: rgba(30, 153, 147, 0.5);
+    filter: blur(50px);
+  }
+
+  /* Ellipse 36 */
+  .fifteen
+  {
+    position: absolute;
+    width: 395px;
+    height: 300px;
+    left: 55px;
+    top: 1166px;
+
+    background: #065D93;
+    filter: blur(50px);
+  }
+
+  /* Ellipse 53 */
+  .sixteen
+  {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 583px;
+    top: 142px;
+
+    background: #19005F;
+    filter: blur(50px);
+  }
+
+
+  /* Footer */
+  #Footer
+  {
+    position: absolute;
+    width: 1144px;
+    height: 520px;
+    left: 55px;
+    top: 1320px;
+
+  }
+
+  #Flogo
+  {
+    position: absolute;
+    width: 187px;
+    height: 187px;
+    left: 40px;
+    top: 33px;
+  }
+
+  .GearDesk
+  {
+    position: absolute;
+    width: 265px;
+    height: 61px;
+    left: 270px;
+    top: 46px;
+
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 69px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    opacity: 0.6;
+ 
+  }
+
+  #Flist
+  {
+    position: absolute;
+
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    opacity: 0.6;
+  }
+
+  .Homepage
+  {
+    width: 265px;
+    height: 40px;
+    left: 233px;
+    top: 181px;
+  }
+
+  .AboutUs
+  {
+    width: 265px;
+    height: 41px;
+    left: 225px;
+    top: 228px;
+  }
+
+  .Catalogue
+  {
+    width: 265px;
+    height: 41px;
+    left: 232px;
+    top: 276px;
+  }
+
+  .Support
+  {
+    width: 265px;
+    height: 41px;
+    left: 256px;
+    top: 324px;
+  }
+
+  .FAQs
+  {
+    width: 265px;
+    height: 41px;
+    left: 541px;
+    top: 177px;
+  }
+
+  .Terms
+  {
+    width: 265px;
+    height: 41px;
+    left: 548px;
+    top: 225px;
+
+  }
+
+  .Privacy
+  {
+    width: 265px;
+    height: 41px;
+    left: 610px;
+    top: 276px;
+  }
+
+  .Returns
+  {
+    width: 265px;
+    height: 41px;
+    left: 571px;
+    top: 320px;
+  }
+
+  .Fline
+  {
+    position: absolute;
+    width: 1135px;
+    height: 0px;
+    left: 9px;
+    top: 0px;
+
+    border: 3px solid #065D93;
+  }
+
+  #facebook
+  {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 704px;
+    top: 443px;
+  }
+  
+  #instagram
+  {
+    position: absolute;
+    width: 79px;
+    height: 79px;
+    left: 813px;
+    top: 438px;
+  }
+
+  #whatsapp
+  {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 933px;
+    top: 443px;
+  }
+
+  #linkedin
+  {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 1043px;
+    top: 443px;
+  }
+
+  .Email
+  {
+    position: absolute;
+    width: 341px;
+    height: 62px;
+    left: 23px;
+    top: 429px;
+
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+
+    color: #5F9CC2;
+  }
+  
+  .Phone
+  {
+    position: absolute;
+    width: 341px;
+    height: 31px;
+    left: 0px;
+    top: 460px;
+
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+
+    color: #5F9CC2;
+
+  }
+  
+  .Address
+  {
+    position: absolute;
+    width: 382px;
+    height: 31px;
+    left: 28px;
+    top: 489px;
+
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+
+    color: #5F9CC2;
+  }
+
+  .Copyright
+  {
+    position: absolute;
+    width: 397px;
+    height: 41px;
+    left: 671px;
+    top: 537px;
+
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    opacity: 0.6;
+
+  }
+
+    </style>
+
+    </head>
+  
+  <body>
+
+    <div id = "background-gradient">
+        <div class = "c one"></div>
+        <div class = "c two"></div>
+        <div class = "c three"></div>
+        <div class = "c four"></div>
+        <div class = "c five"></div>
+        <div class = "c six"></div>
+        <div class = "c seven"></div>
+        <div class = "c eight"></div>
+        <div class = "c nine"></div>
+        <div class = "c ten"></div>
+        <div class = "c eleven"></div>
+        <div class = "c thirteen"></div>
+        <div class = "c fourteen"></div>
+        <div class = "c fifteen"></div>
+        <div class = "c sixteen"></div>
+    </div>
+
+    <div id="Header">
+
+      <div class="Header Box"></div>
+
+      <img alt="Logo" id="Logo" src="./img/Header/Logo.png">
+
+      <a href="./Product Detail.html"><p class="Home" id="HList">Homepage</p></a>
+      <a href="./Product Detail.html"><p class="Products" id="HList">Products</p></a>
+      <a href="./Shopping Cart.html"><p class="Cart" id="HList">Shopping Cart</p></a>
+      <a href="./Contact Us.html"><p class="Contact" id="HList">Contact Us</p></a>
+      <a href="./Signup.html"><p class="Account" id="HList">Account</p></a>
+
+    </div>
+
+    <div id="Navigation">
+      <a href="./Product Detail.html">
+        <img alt="Back Arrow" id="Arrow" src="./img/Navigation/Arrow.png">
+      </a>
+    </div>
+
+    <div id="Login">
+      <p class="LoginText">Sign Up</p>
+
+      <form class="LoginBody">
+        
+        <fieldset>
+
+          <label for="name" id="username-label">Username <br> 
+            <input id="name" type="text" name="name" placeholder="Enter Username..." required />
+          </label>
+          
+          <br><br><br><br>
+          
+          <label for="email" id="email-label">Email <br> 
+            <input id="email" type="email" name="email" placeholder="Enter Email..." required />
+          </label>
+          
+          <br><br><br><br>
+          
+          <label for="password" id="password-label">Password <br> 
+            <input id="password" type="password" name="password" placeholder="Enter Password..." required />
+          </label>
+
+        </fieldset>
+
+      </form>
+
+      <button class="LoginButton">Sign Up</button>
+
+      <a href="./Login.html"><p class="CreateNewAccount">Already have an Account?</p></a>
+
+      <p class="OrLogInwith">Or Log In with</p>
+            
+      <div class="ThreeLogos">
+        <img alt="Apple Logo" id="AppleLogo" class="Logo" src="./img/Login/Apple.png">
+        <img alt="Google Logo" id="Google Logo" class="Logo" src="./img/Login/Google.png">
+        <img alt="Facebook Logo" id="Facebook Logo" class="Logo" src="./img/Login/Facebook.png">
+      </div>
+
+    </div>
+    
+    <div id = "footer">
+
+      <div class="Fline"></div>
+
+      <img alt="Logo" id="Flogo" src="./img/Footer/FLogo.png">
+
+      <p class="GearDesk">Gear Desk</p>
+
+      <a href="./Product Detail.html"><p class="Homepage" id="FList">Homepage</p></a>
+      <a href="./About Us.html"><p class="AboutUs" id="FList">About Us</p></a>
+      <a href="./Shopping Cart.html"><p class="Catalogue" id="FList">Catalouge</p></a>
+      <a href="./Contact Us.html"><p class="Support" id="FList">Support Page</p></a>
+      <a href="./Contact Us.html"><p class="FAQs" id="FList">FAQs</p></a>
+      <p class="Terms" id="FList">Terms</p>
+      <p class="Privacy" id="FList">Privacy Policy</p>
+      <p class="Returns" id="FList">Returns</p>
+
+      <p class="Email">Email: geardesk@gmail.com</p>
+      <p class="Phone">Phone: 0303-3048058</p>
+      <p class="Address">Address: FAST NUCES Islamabad</p>
+
+      <img alt="facebook" id="facebook" src="./img/Footer/facebook.png">
+      <img alt="instagram" id="instagram" src="./img/Footer/instagram.png">
+      <img alt="whatsapp" id="whatsapp" src="./img/Footer/whatsapp.png">
+      <img alt="linkedin" id="linkedin" src="./img/Footer/linkedin.png">
+
+      
+      <p class="Copyright">© Gear Desk 2025. All rights reserved.</p>
+    </div>
+
+  </body>
+  
+</html>
