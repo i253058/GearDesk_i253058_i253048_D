@@ -1,0 +1,844 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gear Desk - Products</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            position: relative;
+            font-family: 'Istok Web', sans-serif;
+            background: linear-gradient(180deg, #1a0450 0%, #000000 100%);
+            color: white;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Background Gradient Circles - Exact from your HTML */
+        .c {
+            position: absolute;
+            border-radius: 100%;
+        }
+
+        .one {
+            width: 607px;
+            height: 429px;
+            left: 954px;
+            top: 275px;
+            background: linear-gradient(180deg, #065D93 0%, #6C6D91 100%);
+            opacity: 0.6;
+            filter: blur(50px);
+        }
+
+        .two {
+            width: 304px;
+            height: 334px;
+            left: 709px;
+            top: 371px;
+            background: linear-gradient(180deg, rgba(83, 6, 147, 0.6) 0%, rgba(108, 109, 145, 0.6) 100%);
+            filter: blur(50px);
+        }
+
+        .three {
+            width: 200px;
+            height: 206px;
+            left: 243px;
+            top: 5px;
+            background: linear-gradient(180deg, #065D93 0%, #6C6D91 100%);
+            opacity: 0.6;
+            filter: blur(50px);
+        }
+
+        .four {
+            width: 383px;
+            height: 334px;
+            left: 577px;
+            top: 941px;
+            background: linear-gradient(180deg, rgba(83, 6, 147, 0.6) 0%, rgba(108, 109, 145, 0.6) 100%);
+            filter: blur(50px);
+        }
+
+        .five {
+            width: 200px;
+            height: 206px;
+            left: 867px;
+            top: 5px;
+            background: linear-gradient(180deg, #065D93 0%, #6C6D91 100%);
+            opacity: 0.6;
+            filter: blur(50px);
+        }
+
+        .six {
+            width: 300px;
+            height: 300px;
+            left: 490px;
+            top: 0px;
+            background: rgba(30, 153, 147, 0.5);
+            filter: blur(50px);
+        }
+
+        .seven {
+            width: 300px;
+            height: 300px;
+            left: 126px;
+            top: 827px;
+            background: rgba(30, 153, 147, 0.5);
+            filter: blur(50px);
+        }
+
+        .eight {
+            width: 300px;
+            height: 300px;
+            left: 290px;
+            top: 319px;
+            background: rgba(30, 153, 147, 0.5);
+            filter: blur(50px);
+        }
+
+        .nine {
+            width: 300px;
+            height: 490px;
+            left: 0px;
+            top: 214px;
+            background: rgba(30, 153, 147, 0.5);
+            filter: blur(50px);
+        }
+
+        .ten {
+            width: 265px;
+            height: 273px;
+            left: 562px;
+            top: 395px;
+            background: linear-gradient(180deg, #4F378A 0%, #150E24 100%);
+            filter: blur(50px);
+        }
+
+        .eleven {
+            width: 265px;
+            height: 273px;
+            left: 1300px;
+            top: 1137px;
+            background: linear-gradient(180deg, #4F378A 0%, #150E24 100%);
+            filter: blur(50px);
+        }
+
+        .twelve {
+            width: 265px;
+            height: 273px;
+            left: 577px;
+            top: 752px;
+            background: linear-gradient(180deg, #4F378A 0%, #150E24 100%);
+            filter: blur(50px);
+        }
+
+        .thirteen {
+            width: 300px;
+            height: 300px;
+            left: 1067px;
+            top: 35px;
+            background: rgba(30, 153, 147, 0.5);
+            filter: blur(50px);
+        }
+
+        .fourteen {
+            width: 300px;
+            height: 230px;
+            left: 941px;
+            top: 1247px;
+            background: rgba(30, 153, 147, 0.5);
+            filter: blur(50px);
+        }
+
+        .fifteen {
+            width: 395px;
+            height: 300px;
+            left: 55px;
+            top: 1166px;
+            background: #065D93;
+            filter: blur(50px);
+        }
+
+        .sixteen {
+            width: 100px;
+            height: 100px;
+            left: 583px;
+            top: 142px;
+            background: #19005F;
+            filter: blur(50px);
+        }
+
+        /* Header */
+        .header {
+            position: relative;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 40px;
+            background: rgba(184, 184, 184, 0.1);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 28px;
+        }
+
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            width: 30px;
+            height: 3px;
+            background: white;
+            border-radius: 2px;
+        }
+
+        .sign-up-btn {
+            background: rgba(99, 102, 241, 0.3);
+            border: 1px solid rgba(99, 102, 241, 0.5);
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .sign-up-btn:hover {
+            background: rgba(99, 102, 241, 0.5);
+        }
+
+        /* Virtual Setup Banner */
+        .virtual-setup {
+            position: relative;
+            z-index: 10;
+            margin: 40px auto;
+            max-width: 1200px;
+            padding: 40px;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.3), rgba(139, 92, 246, 0.3));
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .virtual-setup-content {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .back-arrow {
+            font-size: 32px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .virtual-setup-text h2 {
+            font-size: 36px;
+            margin-bottom: 8px;
+        }
+
+        .virtual-setup-text p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 16px;
+        }
+
+        .create-btn {
+            background: rgba(99, 102, 241, 0.8);
+            border: none;
+            color: white;
+            padding: 12px 32px;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .create-btn:hover {
+            background: rgba(99, 102, 241, 1);
+        }
+
+        /* Search and Filter */
+        .search-filter {
+            position: relative;
+            z-index: 10;
+            max-width: 1200px;
+            margin: 0 auto 30px;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .search-box {
+            flex: 1;
+            max-width: 400px;
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 12px 20px 12px 45px;
+            color: white;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .search-box::before {
+            content: "🔍";
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
+        }
+
+        .filter-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 12px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Product Section */
+        .product-section {
+            position: relative;
+            z-index: 10;
+            max-width: 1200px;
+            margin: 0 auto 60px;
+            padding: 0 40px;
+        }
+
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(99, 102, 241, 0.5);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 120px;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(139, 92, 246, 0.2));
+            border-radius: 12px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 10px;
+        }
+
+        .product-name {
+            font-size: 16px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .product-price {
+            color: #8b5cf6;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .out-of-stock {
+            color: #ef4444;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        /* Footer - Exact from your HTML */
+        .footer {
+            position: relative;
+            z-index: 10;
+            max-width: 1200px;
+            margin: 80px auto 0;
+            padding: 40px;
+        }
+
+        .footer-line {
+            width: 100%;
+            height: 0px;
+            border: 3px solid #065D93;
+            margin-bottom: 40px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: auto 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-logo {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .footer-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #FFFFFF;
+            opacity: 0.6;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.6;
+            font-size: 20px;
+            transition: opacity 0.3s;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+        }
+
+        .footer-contact {
+            margin-top: 30px;
+        }
+
+        .footer-contact p {
+            color: #5F9CC2;
+            font-size: 16px;
+            margin-bottom: 8px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .social-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(99, 102, 241, 0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .social-icon:hover {
+            background: rgba(99, 102, 241, 0.6);
+            transform: scale(1.1);
+        }
+
+        .footer-copyright {
+            text-align: center;
+            opacity: 0.6;
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+
+        @media (max-width: 768px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .virtual-setup {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Gradients - Exact from your HTML file -->
+    <div id="background-gradient">
+        <div class="c one"></div>
+        <div class="c two"></div>
+        <div class="c three"></div>
+        <div class="c four"></div>
+        <div class="c five"></div>
+        <div class="c six"></div>
+        <div class="c seven"></div>
+        <div class="c eight"></div>
+        <div class="c nine"></div>
+        <div class="c ten"></div>
+        <div class="c eleven"></div>
+        <div class="c twelve"></div>
+        <div class="c thirteen"></div>
+        <div class="c fourteen"></div>
+        <div class="c fifteen"></div>
+        <div class="c sixteen"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo-container">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">GD</div>
+        </div>
+        <button class="sign-up-btn">Sign Up</button>
+    </header>
+
+    <!-- Virtual Setup Banner -->
+    <div class="virtual-setup">
+        <div class="virtual-setup-content">
+            <div class="back-arrow">←</div>
+            <div class="virtual-setup-text">
+                <h2>Virtual Setup</h2>
+                <p>Create your own Virtual desktop setup</p>
+            </div>
+        </div>
+        <button class="create-btn">Create</button>
+    </div>
+
+    <!-- Search and Filter -->
+    <div class="search-filter">
+        <div class="search-box">
+            <input type="text" placeholder="Search products...">
+        </div>
+        <button class="filter-btn">
+            <span>↓</span> Most Relevant
+        </button>
+    </div>
+
+    <!-- Headsets Section -->
+    <section class="product-section">
+        <h2 class="section-title">Headsets</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=400&q=80" alt="G335 Headset">
+                </div>
+                <div class="product-name">G335</div>
+                <div class="product-price">$99.00</div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1599669454699-248893623440?w=400&q=80" alt="G321 Headset">
+                </div>
+                <div class="product-name">G321</div>
+                <div class="product-price">$79.99</div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1545127398-14699f92334b?w=400&q=80" alt="PRO X SE Headset">
+                </div>
+                <div class="product-name">PRO X SE</div>
+                <div class="product-price">$149.99</div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400&q=80" alt="Astro A20 X Headset">
+                </div>
+                <div class="product-name">Astro A20 X</div>
+                <div class="product-price">$179.99</div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=400&q=80" alt="G733 Headset">
+                </div>
+                <div class="product-name">G733</div>
+                <div class="product-price">$189.99</div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1577174881658-0f30157dec9d?w=400&q=80" alt="Astro A10 Headset">
+                </div>
+                <div class="product-name">Astro A10</div>
+                <div class="product-price">$129.99</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mice Section -->
+    <section class="product-section">
+        <h2 class="section-title">Mice</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&q=80" alt="G305 Mouse">
+                </div>
+                <div class="product-name">G305</div>
+                <div class="product-price">$99.00</div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=400&q=80" alt="G502 X Mouse">
+                </div>
+                <div class="product-name">G502 X</div>
+                <div class="product-price">$79.99</div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1586920740099-e0bf22194243?w=400&q=80" alt="G50 PLUS Mouse">
+                </div>
+                <div class="product-name">G50 PLUS</div>
+                <div class="product-price">$88.00</div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1563297007-0686b7003af7?w=400&q=80" alt="G502 LS Mouse">
+                </div>
+                <div class="product-name">G502 LS</div>
+                <div class="product-price">$80.00</div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1622782914767-404fb9ab3f57?w=400&q=80" alt="G703 Mouse">
+                </div>
+                <div class="product-name">G703</div>
+                <div class="product-price">$56.99</div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1598387993281-cecf8b71a8f8?w=400&q=80" alt="GPRO X Mouse">
+                </div>
+                <div class="product-name">GPRO X</div>
+                <div class="product-price">$79.99</div>
+                <div class="out-of-stock">Out of Stock</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keyboards Section -->
+    <section class="product-section">
+        <h2 class="section-title">Keyboards</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1595225476474-87563907a212?w=400&q=80" alt="G515 TKL Keyboard">
+                </div>
+                <div class="product-name">G515 TKL</div>
+                <div class="product-price">$99.00</div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400&q=80" alt="G515 Keyboard">
+                </div>
+                <div class="product-name">G515</div>
+                <div class="product-price">$79.99</div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?w=400&q=80" alt="G915 Keyboard">
+                </div>
+                <div class="product-name">G915</div>
+                <div class="product-price">$229.99</div>
+                <div class="out-of-stock">Out of Stock</div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1601445638532-3c6f6c3aa1d6?w=400&q=80" alt="G915 TKL Keyboard">
+                </div>
+                <div class="product-name">G915 TKL</div>
+                <div class="product-price">$179.00</div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=400&q=80" alt="PRO X 60 Keyboard">
+                </div>
+                <div class="product-name">PRO X 60</div>
+                <div class="product-price">$169.99</div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1560762484-813fc97650a0?w=400&q=80" alt="G715 Keyboard">
+                </div>
+                <div class="product-name">G715</div>
+                <div class="product-price">$129.99</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Racing Wheels Section -->
+    <section class="product-section">
+        <h2 class="section-title">Racing Wheels</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=400&q=80" alt="R920 Racing Wheel">
+                </div>
+                <div class="product-name">R920</div>
+                <div class="product-price">$999.00</div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80" alt="RS McLaren Racing Wheel">
+                </div>
+                <div class="product-name">RS McLaren</div>
+                <div class="product-price">$2779.99</div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1625527575307-616f0bb84ad2?w=400&q=80" alt="PRO RS Racing Wheel">
+                </div>
+                <div class="product-name">PRO RS</div>
+                <div class="product-price">$1850.00</div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=400&q=80" alt="RS WH Racing Wheel">
+                </div>
+                <div class="product-name">RS WH</div>
+                <div class="product-price">$1750.00</div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=400&q=80" alt="RS TRACK Racing Wheel">
+                </div>
+                <div class="product-name">RS TRACK</div>
+                <div class="product-price">$1550.99</div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1624705002806-5d72607f681c?w=400&q=80" alt="RS Round Racing Wheel">
+                </div>
+                <div class="product-name">RS Round</div>
+                <div class="product-price">$1250.99</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-line"></div>
+        
+        <div class="footer-content">
+            <div class="footer-logo-section">
+                <div class="footer-logo">GD</div>
+                <div class="footer-title">Gear Desk</div>
+                <div class="footer-contact">
+                    <p>Email: geardesk@gmail.com</p>
+                    <p>Phone: 0303-3048058</p>
+                    <p>Address: FAST NUCES Islamabad</p>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <a href="#">Homepage</a>
+                <a href="#">About Us</a>
+                <a href="#">Catalogue</a>
+                <a href="#">Support Page</a>
+            </div>
+            
+            <div class="footer-links">
+                <a href="#">FAQs</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Returns</a>
+            </div>
+        </div>
+
+        <div class="footer-social">
+            <div class="social-icon">f</div>
+            <div class="social-icon">📷</div>
+            <div class="social-icon">💬</div>
+            <div class="social-icon">in</div>
+        </div>
+
+        <div class="footer-copyright">
+            © Gear Desk 2025. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

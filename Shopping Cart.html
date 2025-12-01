@@ -1,0 +1,984 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <style>
+
+  body
+  {
+    position: relative;
+    width: 1260px;
+    height: 2231px;
+    font-family: 'Istok Web';
+    
+
+    background: linear-gradient(180deg, #3906B6 0%, #000000 100%);
+  }
+
+  #Logo
+  {
+    position: absolute;
+    width: 143px;
+    height: 143px;
+    left: 25px;
+    top: 6px;
+  }
+  
+  .Header
+  {
+    position: absolute;
+    width: 1450px;
+    height: 102px;
+    left: calc(50% - 1450px/2 - 5px);
+    top: 0px;
+
+    background: rgba(184, 184, 184, 0.6);
+    filter: blur(50px);
+  }
+
+  #HList
+  {
+    position: absolute;
+    width: 218px;
+    height: 63px;
+    top: 20px;
+
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 69px;
+    text-align: center;
+
+    color: #BFACEB;
+  }
+
+  .Home
+  { 
+    left: 124px;
+  }
+
+  .Products
+  {
+    left: 254px;
+  }
+
+  .Cart
+  {
+    left: 404;
+  }
+
+  .Contact
+  {
+    left: 570;
+  }
+
+  .Account
+  {
+    left: 704;
+  }
+
+
+  .SignUp
+  {
+    position: absolute;
+    width: 262px;
+    height: 90px;
+    left: 948px;
+    top: 32px;
+  }
+
+
+  .SButton
+  {
+    width: 262px;
+    height: 90px;
+
+    background: linear-gradient(180deg, #000000 0%, #674FEC 100%);
+    opacity: 0.3;
+    border-radius: 10px;
+  }
+
+  .SText
+  {
+    width: 147.76px;
+    height: 57.07px;
+    margin-top: 17;
+    margin-left: 20%;
+
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 52px;
+    text-align: center;
+
+    color: #FFFFFF;
+  }
+  
+  #Arrow
+  {
+    position: absolute;
+    width: 194px;
+    height: 193px;
+    left: 28px;
+    top: 158px;
+  }
+
+  #ProdName
+  {
+    position: absolute;
+    left: 300px;
+
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 52px;
+    text-align: center;
+
+    color: #BFACEB;
+  }
+
+  h6
+  {
+    position: absolute;
+    width: 89px;
+    height: 29px;
+    left: 327px;
+
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+
+    color: #E1E1E1;
+  }
+
+  #Available
+  {
+    position: absolute;
+    width: 188px;
+    height: 29px;
+    left: 578px;
+
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+
+    color: #0EBC1F;
+  }
+
+  #Quantity
+  {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 218.7px;
+    height: 74.2px;
+    left: 838px;
+
+    color: #FFFFFF;
+    font-size: 42px;
+    padding-top: 10px;
+    padding-left: 60px;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(47, 30, 143, 0.4) 100%);
+    opacity: 0.9;
+    border-radius: 10px;
+
+  }
+
+  #line
+  {
+    position: absolute;
+    width: 572px;
+    height: 0px;
+    left: 326px;
+
+    border: 1px solid #BFACEB;
+  }
+
+  .LOne
+  {
+    top: 359px;
+  }
+
+  .LTwo
+  {
+    top: 499px;
+  }
+
+  .LThree
+  {
+    top: 643px;
+  }
+
+  .LFour
+  {
+    top: 797px;
+  }
+
+  .Aone
+  {
+    top: 298px;
+  }
+
+  .Atwo
+  {
+    top: 443px;
+  }
+
+  .Athree
+  {
+    top: 588px;
+  }
+
+  .Afour  
+  {
+    top: 733px;
+  }
+
+  .Qone
+  {
+    top: 278px;
+  }
+
+  .Qtwo
+  {
+    top: 413px;
+  }
+
+  .Qthree
+  {
+    top: 558px;
+  }
+
+  .Qfour  
+  {
+    top: 703px;
+  }
+
+  .first
+  {
+    width: 148px;
+    height: 66px;
+    top: 256px;
+  }
+
+  .second
+  {
+    width: 161px;
+    height: 66px;
+    top: 392px;
+  }
+
+  .third
+  {
+    width: 157px;
+    height: 65px;
+    top: 546px;
+  }
+
+  .fourth
+  {
+    width: 236px;
+    height: 64px;
+    top: 691px;
+  }
+
+  .L
+  {
+    top: 1134;
+  }
+
+
+  h3
+  {
+    position: absolute;
+    width: 152px;
+    height: 66px;
+    left: 326px;
+    top: 868px;
+
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 52px;
+    text-align: center;
+
+    color: #BFACEB;
+  }
+
+  h5
+  {
+    position: absolute;
+    left: 156px;
+    top: 900px;
+
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+
+    color: #BABABA;
+  }
+
+  h4
+  {
+    position: absolute;
+    width: 160px;
+    height: 43px;
+    left: 700px;
+    top: 1022px;
+
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 58px;
+    text-align: center;
+
+    color: #E1E1E1;
+  }
+
+  .button
+  {
+    position: absolute;
+    width: 592px;
+    height: 82px;
+    left: 324px;
+    margin-top: 50px;
+
+    color: white;
+    font-size: 34px;
+
+    background: linear-gradient(90deg, rgba(79, 55, 138, 0.8) 0%, rgba(47, 30, 143, 0.8) 100%);
+    border-radius: 15px;
+    border: none;
+  }
+
+  .check
+  {
+    top: 1152px;
+  }
+
+  .shop
+  {
+    top: 1262px;
+  }
+
+
+  .c
+  {
+      position: absolute;
+      width: 1565px;
+      height: 1477px;
+      left: -121px;
+      top: 668px;
+      border-radius: 100%;
+  }
+
+  /* Ellipse 46 */
+  .one
+  {
+      position: absolute;
+      width: 607px;
+      height: 429px;
+      left: 954px;
+      top: 275px;
+
+      background: linear-gradient(180deg, #065D93 0%, #6C6D91 100%);
+      opacity: 0.6;
+      filter: blur(50px);
+  }
+
+  /* Ellipse 36 */
+
+  .two
+  {
+      position: absolute;
+      width: 304px;
+      height: 334px;
+      left: 709px;
+      top: 371px;
+
+      background: linear-gradient(180deg, rgba(83, 6, 147, 0.6) 0%, rgba(108, 109, 145, 0.6) 100%);
+      filter: blur(50px);
+  }
+
+  /* Ellipse 37 */
+
+  .three
+  {
+    position: absolute;
+    width: 200px;
+    height: 206px;
+    left: 243px;
+    top: 5px;
+
+    background: linear-gradient(180deg, #065D93 0%, #6C6D91 100%);
+    opacity: 0.6;
+    filter: blur(50px);
+  }
+
+  /* Ellipse 51 */
+
+  .four
+  {
+    position: absolute;
+    width: 383px;
+    height: 334px;
+    left: 577px;
+    top: 941px;
+
+    background: linear-gradient(180deg, rgba(83, 6, 147, 0.6) 0%, rgba(108, 109, 145, 0.6) 100%);
+    filter: blur(50px);
+
+  }
+
+  /* Ellipse 41 */
+
+  .five
+  {
+    position: absolute;
+    width: 200px;
+    height: 206px;
+    left: 867px;
+    top: 5px;
+
+    background: linear-gradient(180deg, #065D93 0%, #6C6D91 100%);
+    opacity: 0.6;
+    filter: blur(50px);
+  }
+
+  /* Ellipse 42 */
+  .six
+  {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 490px;
+    top: 0px;
+
+    background: rgba(30, 153, 147, 0.5);
+    filter: blur(50px);
+
+  }
+
+  /* Ellipse 48 */
+  .seven
+  {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 126px;
+    top: 827px;
+
+    background: rgba(30, 153, 147, 0.5);
+    filter: blur(50px);
+  }
+
+  /* Ellipse 43 */
+  .eight
+  {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 290px;
+    top: 319px;
+
+    background: rgba(30, 153, 147, 0.5);
+    filter: blur(50px);
+
+  }
+
+  /* Ellipse 47 */
+
+  .nine
+  {
+    position: absolute;
+    width: 300px;
+    height: 490px;
+    left: 0px;
+    top: 214px;
+
+    background: rgba(30, 153, 147, 0.5);
+    filter: blur(50px);
+  }
+
+  /* Ellipse 36 */
+  .ten
+  {
+    position: absolute;
+    width: 265px;
+    height: 273px;
+    left: 562px;
+    top: 395px;
+
+    background: linear-gradient(180deg, #4F378A 0%, #150E24 100%);
+    filter: blur(50px);
+  }
+
+  /* Ellipse 50 */
+
+  .eleven
+  {
+    position: absolute;
+    width: 265px;
+    height: 273px;
+    left: 1300px;
+    top: 1137px;
+
+    background: linear-gradient(180deg, #4F378A 0%, #150E24 100%);
+    filter: blur(50px);
+  }
+
+  /* Ellipse 49 */
+
+  .twelve
+  {
+    position: absolute;
+    width: 265px;
+    height: 273px;
+    left: 577px;
+    top: 752px;
+
+    background: linear-gradient(180deg, #4F378A 0%, #150E24 100%);
+    filter: blur(50px);
+  }
+
+  /* Ellipse 40 */
+  .thirteen
+  {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 1067px;
+    top: 35px;
+
+    background: rgba(30, 153, 147, 0.5);
+    filter: blur(50px);
+  }
+
+  /* Ellipse 52 */
+  .fourteen
+  {
+    position: absolute;
+    width: 300px;
+    height: 230px;
+    left: 941px;
+    top: 1247px;
+
+    background: rgba(30, 153, 147, 0.5);
+    filter: blur(50px);
+  }
+
+  /* Ellipse 36 */
+  .fifteen
+  {
+    position: absolute;
+    width: 395px;
+    height: 300px;
+    left: 55px;
+    top: 1166px;
+
+    background: #065D93;
+    filter: blur(50px);
+  }
+
+  /* Ellipse 53 */
+  .sixteen
+  {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 583px;
+    top: 142px;
+
+    background: #19005F;
+    filter: blur(50px);
+  }
+
+
+  /* Footer */
+  #Footer
+  {
+    position: absolute;
+    width: 1144px;
+    height: 520px;
+    left: 55px;
+    top: 1620px;
+  }
+
+  #Flogo
+  {
+    position: absolute;
+    width: 187px;
+    height: 187px;
+    left: 40px;
+    top: 33px;
+  }
+
+  .GearDesk
+  {
+    position: absolute;
+    width: 265px;
+    height: 61px;
+    left: 270px;
+    top: 46px;
+
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 69px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    opacity: 0.6;
+ 
+  }
+
+  #Flist
+  {
+    position: absolute;
+
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    opacity: 0.6;
+  }
+
+  .Homepage
+  {
+    width: 265px;
+    height: 40px;
+    left: 233px;
+    top: 181px;
+  }
+
+  .AboutUs
+  {
+    width: 265px;
+    height: 41px;
+    left: 225px;
+    top: 228px;
+  }
+
+  .Catalogue
+  {
+    width: 265px;
+    height: 41px;
+    left: 232px;
+    top: 276px;
+  }
+
+  .Support
+  {
+    width: 265px;
+    height: 41px;
+    left: 256px;
+    top: 324px;
+  }
+
+  .FAQs
+  {
+    width: 265px;
+    height: 41px;
+    left: 541px;
+    top: 177px;
+  }
+
+  .Terms
+  {
+    width: 265px;
+    height: 41px;
+    left: 548px;
+    top: 225px;
+
+  }
+
+  .Privacy
+  {
+    width: 265px;
+    height: 41px;
+    left: 610px;
+    top: 276px;
+  }
+
+  .Returns
+  {
+    width: 265px;
+    height: 41px;
+    left: 571px;
+    top: 320px;
+  }
+
+  .Fline
+  {
+    position: absolute;
+    width: 1135px;
+    height: 0px;
+    left: 9px;
+    top: 0px;
+
+    border: 3px solid #065D93;
+  }
+
+  #facebook
+  {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 704px;
+    top: 443px;
+  }
+  
+  #instagram
+  {
+    position: absolute;
+    width: 79px;
+    height: 79px;
+    left: 813px;
+    top: 438px;
+  }
+
+  #whatsapp
+  {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 933px;
+    top: 443px;
+  }
+
+  #linkedin
+  {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 1043px;
+    top: 443px;
+  }
+
+  .Email
+  {
+    position: absolute;
+    width: 341px;
+    height: 62px;
+    left: 23px;
+    top: 429px;
+
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+
+    color: #5F9CC2;
+  }
+  
+  .Phone
+  {
+    position: absolute;
+    width: 341px;
+    height: 31px;
+    left: 0px;
+    top: 460px;
+
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+
+    color: #5F9CC2;
+
+  }
+  
+  .Address
+  {
+    position: absolute;
+    width: 382px;
+    height: 31px;
+    left: 28px;
+    top: 489px;
+
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+
+    color: #5F9CC2;
+  }
+
+  .Copyright
+  {
+    position: absolute;
+    width: 397px;
+    height: 41px;
+    left: 671px;
+    top: 537px;
+
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    opacity: 0.6;
+
+  }
+
+  </style>
+
+    </head>
+  
+  <body>
+
+    <div id = "background-gradient">
+        <div class = "c one"></div>
+        <div class = "c two"></div>
+        <div class = "c three"></div>
+        <div class = "c four"></div>
+        <div class = "c five"></div>
+        <div class = "c six"></div>
+        <div class = "c seven"></div>
+        <div class = "c eight"></div>
+        <div class = "c nine"></div>
+        <div class = "c ten"></div>
+        <div class = "c eleven"></div>
+        <div class = "c twelve"></div>
+        <div class = "c thirteen"></div>
+        <div class = "c fourteen"></div>
+        <div class = "c fifteen"></div>
+        <div class = "c sixteen"></div>
+    </div>
+
+    <div id="Header">
+
+      <img alt="Logo" id="Logo" src="./img/Header/Logo.png">
+
+      <a href="./Product Detail.html"><p class="Home" id="HList">Homepage</p></a>
+      <a href="./Product Detail.html"><p class="Products" id="HList">Products</p></a>
+      <a href="./Shopping Cart.html"><p class="Cart" id="HList">Shopping Cart</p></a>
+      <a href="./Contact Us.html"><p class="Contact" id="HList">Contact Us</p></a>
+      <a href="./Signup.html"><p class="Account" id="HList">Account</p></a>
+
+      <div class="SignUp">
+        <button class="SButton">
+          <p class="SText">Sign Up</p>
+        </button>
+      </div>
+
+       <div class="Header Box"></div>
+
+    </div>
+    
+    <div id="Navigation">
+      <a href="./Product Detail.html">
+        <img alt="Back Arrow" id="Arrow" src="./img/Navigation/Arrow.png">
+      </a>
+    </div>
+    
+    <p id="ProdName" class="first">G321</p>
+    <h6 class="ProdPrice one">$79.99</h6>
+    <p id="Available" class="Aone">Stock Available</p>
+    <div id="Quantity" class="Qone">-  1  +</div>
+
+    <div id="line" class="LOne" ></div>
+    
+    <p id="ProdName" class="second">Astro A10</p>
+    <h6 class="ProdPrice two">$156.99</h6>
+    <p id="Available" class="Atwo">Stock Available</p>
+    <div id="Quantity" class="Qtwo">-  1  +</div>
+
+    <div id="line" class="LTwo" ></div>
+    
+    <p id="ProdName" class="third">G305</p>
+    <h6 class="ProdPrice three">$80.00</h6>
+    <p id="Available" class="Athree">Stock Available</p>
+    <div id="Quantity" class="Qthree">-  2  +</div>
+
+    <div id="line" class="LThree" ></div>
+    
+    <p id="ProdName" class="fourth">Astro A20 X</p>
+    <h6 class="ProdPrice four">$176.00</h6>
+    <p id="Available" class="Afour">Stock Available</p>
+    <div id="Quantity" class="Qfour">-  1  +</div>
+
+    <div id="line" class="LFour" ></div>
+
+    <h3>Total</h3>
+
+    <h5><pre>
+                Subtotal     $492.98 <br>
+      Delivery Fee (15%)     $73.95 <br>
+                Tax (5%)     $24.65</pre>
+     </h5>
+
+    <h4>$591.58</h4>
+
+    <div id="line" class="L"></div>
+
+     <a href="./Checkout.html"><button class="button check">Proceed to Checkout</button></a>
+     <a href="./Product Detail.html"><button class="button shop">Continue Shopping</button></a>
+
+    <div id = "footer">
+
+      <div class="Fline"></div>
+
+      <img alt="Logo" id="Flogo" src="./img/Footer/FLogo.png">
+
+      <p class="GearDesk">Gear Desk</p>
+
+      <a href="./Product Detail.html"><p class="Homepage" id="FList">Homepage</p></a>
+      <a href="./About Us.html"><p class="AboutUs" id="FList">About Us</p></a>
+      <a href="./Shopping Cart.html"><p class="Catalogue" id="FList">Catalouge</p></a>
+      <a href="./Contact Us.html"><p class="Support" id="FList">Support Page</p></a>
+      <a href="./Contact Us.html"><p class="FAQs" id="FList">FAQs</p></a>
+      <p class="Terms" id="FList">Terms</p>
+      <p class="Privacy" id="FList">Privacy Policy</p>
+      <p class="Returns" id="FList">Returns</p>
+
+      <p class="Email">Email: geardesk@gmail.com</p>
+      <p class="Phone">Phone: 0303-3048058</p>
+      <p class="Address">Address: FAST NUCES Islamabad</p>
+
+      <img alt="facebook" id="facebook" src="./img/Footer/facebook.png">
+      <img alt="instagram" id="instagram" src="./img/Footer/instagram.png">
+      <img alt="whatsapp" id="whatsapp" src="./img/Footer/whatsapp.png">
+      <img alt="linkedin" id="linkedin" src="./img/Footer/linkedin.png">
+
+      
+      <p class="Copyright">© Gear Desk 2025. All rights reserved.</p>
+    </div>
+
+  
+</html>
